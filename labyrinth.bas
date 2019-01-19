@@ -18,8 +18,8 @@
   170 pokev+6,111:pokev+7,102
   180 pokev+8,159:pokev+9,102
   190 pokev+10,207:pokev+11,102
-  200 pokev+12,33:pokev+13,58
-  210 pokev+14,31:pokev+15,58
+  200 pokev+12,30:pokev+13,58
+  210 pokev+14,32:pokev+15,58
   220 pokev+16,peek(v+16)or128
   230 pokev+29,255:pokev+23,255
   235 poke53265,peek(53265)or16
@@ -50,14 +50,14 @@
   480 fora=1to40:pokebs+a,102:pokefs+a,6:nexta
   490 for a=1to1000step40:pokebs+a-1,102:pokebs+a,102:pokefs+a-1,6:pokefs+a,6:nexta
   500 fora=1to40:poke1984+a,102:poke56255+a,6:nexta
-  510 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}{CBM-A}CCCCCCCCCCC{CBM-S}"
-  520 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}Bstellt vor:B"
-  530 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}{CBM-Z}CCCCCCCCCCC{CBM-X}"
-  541 print"{down}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}{CBM-A}CCCCCCCCCCCCCCCCCCCCCCCC{CBM-S}"
-  542 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}Blabyrinth des schreckensB"
-  543 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}{CBM-Z}CCCCCCCCCCCCCCCCCCCCCCCC{CBM-X}"
-  544 print"{rght}{rght}{rght}{down}{down}{rvon}{blk}(c)1984 markt & technik verlag ag"
-  550 print"{rght}{rvon}{red} d r u e c k e  d i e  f 1 - t a s t e{rvof}{wht}"
+  510 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}{CBM-A}CCCCCCCCC{CBM-S}"
+  520 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}Bpresents:B"
+  530 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{wht}{CBM-Z}CCCCCCCCC{CBM-X}"
+  541 print"{down}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}{CBM-A}CCCCCCCCCCCCCCCCC{CBM-S}"
+  542 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}Blabyrinth of fearB"
+  543 print"{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{orng}{CBM-Z}CCCCCCCCCCCCCCCCC{CBM-X}"
+  544 print"{rght}{rght}{rght}{down}{down}{rvon}{blk}(c) 1984 markt & technik verlag ag"
+  550 print"{rght}{rght}{rght}{rght}{rght}{rvon}{red} p r e s s  t h e  f 1  k e y {rvof}{wht}"
   560 data0,1,247,0,0,227,0,0,227,0,0,227,0,0,195,0
   570 data0,199,0,1,199,0,1,199,0,1,198,0,3,134,0,3
   580 data254,0,3,254,7,7,12,31,199,12,63,231,15,62,110,31
@@ -101,5 +101,5 @@
   960 poke53265,peek(53265)and239
   965 forl=12288to12799:pokel,0:nextl
   966 forx=39to46:pokev+x,1:nextx
-  970 load"des schreckens",8,1
+  970 load"of fear",8,1
 
