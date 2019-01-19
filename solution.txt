@@ -1,0 +1,46 @@
+o
+h
+nimm schaufel
+r
+n
+grabe
+nimm flasche
+klettere baum
+nimm lampe
+r
+s
+w
+nimm bild
+druecke knopf
+lege bild
+n
+n
+n
+w
+grabe
+oeffne kiste
+lege schaufel
+nimm erdnuesse
+o
+o
+n
+gebe erdnuesse
+n
+nimm rum
+n
+s
+s
+s
+w
+nimm stein
+s
+o
+gebe flasche
+o
+oeffne schrank
+yoho
+n
+wirf stein
+n
+nimm schatz
+plugh 
