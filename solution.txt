@@ -1,46 +1,46 @@
-o
-h
-nimm schaufel
-r
+e
+u
+take spade
+d
 n
-grabe
-nimm flasche
-klettere baum
-nimm lampe
-r
+dig
+take bottle
+climb tree
+take light
+d
 s
 w
-nimm bild
-druecke knopf
-lege bild
+take painting
+press button
+drop painting
 n
 n
 n
 w
-grabe
-oeffne kiste
-lege schaufel
-nimm erdnuesse
-o
-o
+dig
+open chest
+drop spade
+take peanuts
+e
+e
 n
-gebe erdnuesse
+give peanuts
 n
-nimm rum
+take rum
 n
 s
 s
 s
 w
-nimm stein
+take stone
 s
-o
-gebe flasche
-o
-oeffne schrank
+e
+give bottle
+e
+open closet
 yoho
 n
-wirf stein
+throw stone
 n
-nimm schatz
+take treasure
 plugh 

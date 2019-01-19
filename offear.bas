@@ -8,31 +8,31 @@
     5 rem
     6 poke53280,6:poke53281,6
     7 gosub 210
-   10 print"{clr}{down}       labyrinth des schreckens"
+   10 print"{clr}{down}       labyrinth of fear"
    20 print"{down}{down}written by thomas werner"
-   40 print"{down}willkommen abenteurer!"
-   50 print"{down}die aufgabe dieses adventures ist,"
-   60 print"{down}einen schatz zu finden."
-   70 print"{down}die befehlssaetze bestehen aus einem"
-   80 print"{down}verb und einem nomen."
-   90 print"{down}z.b.: nimm flasche  sprich hallo"
-  100 print"{down}lege axt  schau  inventur  stop"
-  105 print"{down}{down}       [ eine taste druecken ]"
+   40 print"{down}welcome adventurer!"
+   50 print"{down}the goal of this adventure is"
+   60 print"{down}to find a treasure."
+   70 print"{down}your commands contain"
+   80 print"{down}a verb and a noun."
+   90 print"{down}e.g.: take bottle, say hello,"
+  100 print"{down}drop axe, show, inventory, stop"
+  105 print"{down}{down}       [ press a key ]"
   106 geta$:ifa$=""then106
-  110 print"{clr}{down}zum gehen in eine bestimmte richtung"
-  120 print"{down}geben sie den anfangsbuchstaben der"
-  130 print"{down}entsprechenden himmelsrichtung ein."
-  140 print"{down}richtungen:     n"
-  150 print"               w+o"
+  110 print"{clr}{down}to move,"
+  120 print"{down}enter the first letter of the"
+  130 print"{down}corresponding direction."
+  140 print"{down}directions:     n"
+  150 print"               w+e"
   160 print"                s"
-  165 print"{down}ausserdem: h= hoch  r= runter"
+  165 print"{down}also: u= up  d= down"
   170 print"{down}{down}    happy adventuring!"
-  180 print"{down}{down}      [ eine taste druecken ! ]"
+  180 print"{down}{down}      [ press a key ! ]"
   190 geta$:ifa$=""then190
   200 goto1000
-  210 print"{down}oh! labyrinth des schreckens!"
-  220 print"von thomas werner"
-  230 print"hilfe, hilfe";
+  210 print"{down}oh! labyrinth of fear!"
+  220 print"by thomas werner"
+  230 print"help, help";
   240 dimco$(22)
   245 dimpn(17,5)
   250 dimpl$(17)
@@ -66,81 +66,81 @@
   375 print".";
   380 next
   390 next
-  400 datayoho,plugh,sprich,nimm,lege,iss,trink,druecke,schau
-  405 datagrabe,klettere,gebe,oeffne,wirf,inventur,n,s,o,w,h,r,stop
-  410 datain einer sackgasse,0,3,0,0,3
-  420 datain der schatzkammer,0,4,0,0,3
-  425 dataim 'rumraum',1,5,0,0,3
-  430 datain der spiegelhalle,0,6,0,0,3
-  435 datain der hoehle des schreckens,3,9,0,0,3
-  440 datain einem geheimzimmer,0,0,0,11,1
-  445 dataan einem sonnigen strand,0,0,8,0,4
-  450 dataan einem meeresstrand,0,10,9,7,4
-  455 datain einer hoehle,5,0,0,8,3
-  460 datain einer muffigen hoehle,8,13,11,0,3
-  465 dataim zwergenkorridor,0,0,6,10,3
-  470 datain der baumkrone,0,0,0,0,5
-  475 dataim geheimgang,10,16,0,0,3
-  480 dataim garten,0,17,0,0,2
-  485 dataauf einem staubigen dachboden,0,0,0,0,1
-  490 datain einem kleinen zimmer,0,0,17,0,1
-  495 dataim treppenhaus,14,0,0,16,1
-  500 data"yoho /dort steht:'yoho'",1,0
-  505 dataschat/ein schatz,2,1
+  400 datayoho,plugh,say,take,drop,eat,drink,press,look
+  405 datadig,climb,give,open,throw,inventory,n,s,e,w,u,d,stop
+  410 datain a dead end,0,3,0,0,3
+  420 datain the treasure room,0,4,0,0,3
+  425 datain the 'rum room',1,5,0,0,3
+  430 datain the mirror hall,0,6,0,0,3
+  435 datain the cave of fear,3,9,0,0,3
+  440 datain a secret room,0,0,0,11,1
+  445 dataon a sunny beach,0,0,8,0,4
+  450 dataon a sea beach,0,10,9,7,4
+  455 datain a cave,5,0,0,8,3
+  460 datain a damp cave,8,13,11,0,3
+  465 datain the dwarven corridor,0,0,6,10,3
+  470 datain the tree,0,0,0,0,5
+  475 datain the secret passage,10,16,0,0,3
+  480 datain the garden,0,17,0,0,2
+  485 datain an attic,0,0,0,0,1
+  490 datain a small room,0,0,17,0,1
+  495 datain the staircase,14,0,0,16,1
+  500 data"yoho /it says:'yoho'",1,0
+  505 datatreas/a treasure,2,1
   510 dataplugh/'plugh',2,0
-  515 datarum  /eine sprudelnde rumquelle,3,0
-  520 dataspieg/ein spiegel,4,0
-  525 datamampf/ein abenteurermampfer,5,0
-  530 dataschra/ein schrank,6,0
-  535 datakiste/eine kiste,0,0
-  540 dataerdnu/erdnuesse,0,1
-  545 datastein/ein stein,8,1
-  550 dataschil/ein schild,9,0
-  555 datazwerg/ein grimmiger zwerg,11,0
-  560 datanest /ein nest,12,0
-  565 datalampe/eine brennende taschenlampe,12,1
-  570 databaum /ein grosser baum,14,0
-  575 dataflasc/eine leere flasche,0,1
-  580 dataflasc/eine flasche rum,0,1
-  585 dataschau/eine schaufel,15,1
-  590 databild /ein bild,16,1
-  595 dataknopf/ein knopf,0,0
-  600 datagehei/ein geheimgang,0,0
-  605 datatrepp/eine treppe,17,0
-  610 rem schatz
+  515 datarum  /a bubbling rum well,3,0
+  520 datamirro/a mirror,4,0
+  525 datamunch/an adventurer muncher,5,0
+  530 dataclose/a closet,6,0
+  535 datachest/a chest,0,0
+  540 datapeanu/peanuts,0,1
+  545 datastone/a stone,8,1
+  550 datasign /a sign,9,0
+  555 datadwarf/a grim dwarf,11,0
+  560 datanest /a nest,12,0
+  565 datalight/a lit flashlight,12,1
+  570 datatree /a big tree,14,0
+  575 databottl/an empty bottle,0,1
+  580 databottl/a bottle of rum,0,1
+  585 dataspade/a spade,15,1
+  590 datapaint/a painting,16,1
+  595 databutto/a button,0,0
+  600 datasecre/a secret passage,0,0
+  605 datastair/a staircase,17,0
+  610 rem treasure
   615 data0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,127,255,128
   620 data64,0,128,64,0,128,32,0,64,32,0,64,16,128,160,31,127,96
   625 data26,43,48,28,80,168,30,128,68,31,255,254,15,255,254
   630 data7,255,254,3,255,254,1,255,254
-  635 rem bild
+  635 rem painting
   646 data0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
   647 data0,0,0,0,0,0,255,255,255,128,254,1,135,57,193
   648 data128,84,1,128,146,5,130,0,11,133,0,21,136,129,233
   650 data 138,134,17,138,136,33,255,255,255
-  655 rem quelle
+  655 rem rum well
   660 data0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
   665 data0,0,0,0,247,0,3,8,128,4,198,64,25,41,32,34,48,160,18,48,160,16,48
   675 data16,12,0,112,3,128,128,0,127,0
-  680 rem ab mam 1
+  680 rem adventurer muncher 1
   685 data0,0,0,0,0,0,1,2,0,2,133,0,0,72,0,0,72,0,0,252,0
   690 data1,254,0,3,19,0,15,243,192,31,255,224,15,255,192
   695 data 3,153,128,0,102,128,3,255,0,1,255,128,0,62,0
   700 data0,127,0,0,127,0,31,255,252,127,255,254
-  710 rem ab mam 2
+  710 rem adventurer muncher 2
   715 data127,255,254,111,255,246,111,255,246,111,255,246
   720 data111,255,246,111,255,246,111,255,246,111,255,246
   725 data111,255,246,111,255,246,111,255,246,243,255,207,249,255,159
   730 data169,129,149,169,129,149,1,129,128,193,129,131,113,129,142
   735 data255,129,255,127,195,254,255,195,255
-  740 rem zwerg
+  740 rem dwarf
   745 data0,7,0,0,30,0,0,62,0,0,126,0,0,90,0,0,126,0,0,66,0,0,126,0,0,24,0
   750 data1,255,128,1,126,128,1,126,128,49,127,0,51,126,0
   755 data63,126,0,0,60,0,0,60,0,0,60,0,0,60,0,0,60,0,0,255,0
-  760 rem flasche
+  760 rem bottle
   765 data0,0,0,0,56,0,0,40,0,0,40,0,0,40,0,0,40,0,0,40,0
   770 data0,68,0,0,130,0,0,130,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0
   775 data1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,255,0
-  780 rem lampe
+  780 rem flashlight
   785 data0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60
   790 data0,0,68,255,255,132,128,0,4,128,0,4,128,0,4,255,255,196
   795 data0,121,36,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -161,11 +161,11 @@
  1210 ifin(10,1)=apthenprint"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}"spc(14)"{blk}Q{pur}"
  1220 ifin(11,1)<>apthen1300
  1225 print"{home}{down}{down}{down}{down}"
- 1230 printtab(10)"UCCCCCCCCCCCCCCCCCI"
- 1240 printtab(10)"Bachtung !!       B"
- 1250 printtab(10)"BfleischfressenderB"
- 1260 printtab(10)"BabenteurermampferB"
- 1270 printtab(10)"JCCCCCCCCCCCCCCCCCK"
+ 1230 printtab(10)"UCCCCCCCCCCCCCCCCCCI"
+ 1240 printtab(10)"Bbeware !!         B"
+ 1250 printtab(10)"Bmeat eating       B"
+ 1260 printtab(10)"Badventurer muncherB"
+ 1270 printtab(10)"JCCCCCCCCCCCCCCCCCCK"
  1300 ifin(18,1)<>apthen1325
  1310 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{blk}"spc(16)"{CBM-L}{CBM-@}{CBM-@}{CBM-@}{CBM-@}OM"
  1320 printtab(16)"{CBM-L}{CBM-T}{CBM-T}{CBM-T}{CBM-T}LN{pur}"
@@ -212,161 +212,161 @@
  1615 if(ws(2)=7orws(2)=1)andpn(ap,5)<>3thenpokev+6,220:pokev+7,150
  1620 ifws(3)=8andap<>12thenpokev+8,220:pokev+9,105
  1630 ifws(3)=8andap=12thenpokev+8,190:pokev+9,90
- 2000 poke214,15:print"{blk}":print"sie sind "pl$(ap):print"sichtbare ausgaenge:";
+ 2000 poke214,15:print"{blk}":print"you are "pl$(ap):print"visible exits:";
  2005 pokev+17,peek(v+17)or16
  2010 ifpn(ap,1)<>0thenprint" n";
  2020 ifpn(ap,2)<>0thenprint" s";
- 2030 ifpn(ap,3)<>0thenprint" o";
+ 2030 ifpn(ap,3)<>0thenprint" e";
  2040 ifpn(ap,4)<>0thenprint" w";
- 2041 ifap=17thenprint" h";
- 2042 ifap=15orap=12thenprint" r";
- 2050 print:print"einzelheiten: ";
+ 2041 ifap=17thenprint" u";
+ 2042 ifap=15orap=12thenprint" d";
+ 2050 print:print"details: ";
  2060 x=0:fori=1to22:ifin(i,1)=apthenx=x+1:printmid$(it$(i),7);" "
- 2070 next:ifx=0thenprint"keine"
- 2080 print:input"befehl -->";a$
+ 2070 next:ifx=0thenprint"none"
+ 2080 print:input"command -->";a$
  2090 fori=1to15:ifmid$(a$,i,1)=" "thengoto3010
  3000 nexti
  3010 a1$=left$(a$,i-1)
  3020 a2$=mid$(a$,i+1)
  3040 fori=1to22:ifa1$=co$(i)then3060
- 3050 nexti:print"ich kenne dieses wort leider nicht!":goto5000
- 3060 ifa1$="yoho"ora1$="plugh"ora1$="sprich"ora1$="schau"ori>14thengoto3100
- 3061 ifa1$="grabe"then3100
+ 3050 nexti:print"i'm afraid i don't know this word!":goto5000
+ 3060 ifa1$="yoho"ora1$="plugh"ora1$="say"ora1$="look"ori>14thengoto3100
+ 3061 ifa1$="dig"then3100
  3065 x=5
  3070 fori=1to22:forc=1to5:ifmid$(it$(i),c,1)=" "thenx=x-1
  3080 next:ifleft$(a2$,x)=left$(it$(i),x)then3100
- 3090 x=5:next:print"deine ausdrucksweise ist mir unverstaendlich!":goto5000
+ 3090 x=5:next:print"that is incomprehensible!":goto5000
  3100 oc=i:print"{clr}":pokev+21,1:ifoc=16and(in(17,1)=-1)orin(17,1)=apthenoc=17
- 3110 ifa1$<>"sprich"then3150
+ 3110 ifa1$<>"say"then3150
  3120 print"ok!":print"'"a2$"'"
  3130 ifa2$="yoho"ora2$="plugh"thena1$=a2$:a2$=""
- 3150 ifa1$="schau"thenprint"ok!"
- 3160 ifa1$="stop"thenprint"ok!":input"noch ein spiel";a$:ifa$<>"ja"thenend
- 3170 ifa1$="stop"anda$="ja"thenrun
+ 3150 ifa1$="look"thenprint"ok!"
+ 3160 ifa1$="stop"thenprint"ok!":input"another game (yes/no)";a$:ifa$<>"yes"thenend
+ 3170 ifa1$="stop"anda$="yes"thenrun
  3180 ifa1$<>"n"then3250
- 3190 ifpn(ap,1)=0thenprint"kein weg in diese richtung, mein freund!":goto3250
+ 3190 ifpn(ap,1)=0thenprint"no exit there, my friend!":goto3250
  3200 ifin(6,1)<>apthen3218
- 3210 print"der mampfer freut sich ueber dich als   kleine zwischenmahlzeit!"
- 3215 print"hat er doch nichts anderes im kopf, als"
- 3216 print"auf neugierige, unvorsichtige           abenteurer zu warten!"
+ 3210 print"you are a nice snack for the muncher!"
+ 3215 print"doesn't it have anything better to do"
+ 3216 print"than sit and wait for eager but         careless adventurers?"
  3217 end
  3218 ifap<>16orin(14,1)=-1then3220
- 3219 print"ich traue mich nicht in diesen dunkelen gang!":goto3250
+ 3219 print"i don't trust myself in this dark passage!":goto3250
  3220 ap=pn(ap,1):print"ok!"
  3250 ifa1$<>"s"then3300
- 3260 ifpn(ap,2)=0thenprint"kein weg in diese jene richtung!":goto3300
+ 3260 ifpn(ap,2)=0thenprint"no way in this direction!":goto3300
  3270 ap=pn(ap,2):print"ok!"
- 3300 ifa1$<>"o"then3350
- 3310 ifpn(ap,3)=0thenprint"dort ist kein  ausgang!":goto3350
+ 3300 ifa1$<>"e"then3350
+ 3310 ifpn(ap,3)=0thenprint"no exit there!":goto3350
  3320 ifin(12,1)<>apthen3340
- 3325 print"der zwerg laesst dich nicht durch!"
+ 3325 print"the dwarf won't let you pass!"
  3330 goto3350
  3340 ap=pn(ap,3):print"ok!"
  3350 ifa1$<>"w"then3400
- 3360 ifpn(ap,4)=0thenprint"kein weg in diese richtung!":goto3400
+ 3360 ifpn(ap,4)=0thenprint"no way in this direction!":goto3400
  3370 ap=pn(ap,4):print"ok!"
- 3400 ifin(12,1)<>apora1$="o"then3430
- 3410 print:print"der zwerg wirft eine axt..."
- 3420 print"...verfehlt!"
- 3425 print"...um haaresbreite!":print
+ 3400 ifin(12,1)<>apora1$="e"then3430
+ 3410 print:print"the dwarf throws an axe..."
+ 3420 print"...fails!"
+ 3425 print"...barely!":print
  3426 fori=1to3000:next
- 3430 ifa1$<>"h"then3470
+ 3430 ifa1$<>"u"then3470
  3440 ifap=17then3450
- 3442 print"ich bin doch kein vogel!"
- 3443 print"(kein weg in diese richtung!)":goto3470
+ 3442 print"i'm not a bird!"
+ 3443 print"(no way in this direction!)":goto3470
  3450 print"ok!":ap=15
- 3470 ifa1$<>"r"then3500
+ 3470 ifa1$<>"d"then3500
  3480 ifap=15orap=12then3490
- 3484 print"ich bin doch kein maulwurf!"
- 3485 print"(kein weg in diese richtung!)":goto3500
+ 3484 print"i'm not a mole!"
+ 3485 print"(no way in this direction!)":goto3500
  3490 print"ok!":ifap=15thenap=17
  3495 ifap=12thenap=14
- 3500 ifa1$<>"nimm"then3550
+ 3500 ifa1$<>"take"then3550
  3505 ifa2$="rum"then3540
- 3510 ifin(oc,2)=0thenprint"ich kann dies nicht nehmen!":goto3550
- 3515 ifin(oc,1)<>apthenprint"ich sehe das hier nicht!":goto3550
+ 3510 ifin(oc,2)=0thenprint"i can't take this!":goto3550
+ 3515 ifin(oc,1)<>apthenprint"i don't see that here!":goto3550
  3520 in(oc,1)=-1:print"ok!"
  3530 ifoc=19thenin(20,1)=ap
  3535 goto3550
- 3540 ifap<>3andin(17,1)<>apthenprint"ich sehe keinen rum!":goto3550
- 3541 ifin(17,1)=-1thenprint"ich trage schon rum!":goto3550
- 3542 ifin(16,1)<>-1thenprint"ich habe kein gefaess!":goto3550
+ 3540 ifap<>3andin(17,1)<>apthenprint"i don't see any rum!":goto3550
+ 3541 ifin(17,1)=-1thenprint"i already have rum!":goto3550
+ 3542 ifin(16,1)<>-1thenprint"i have nothing to put it in!":goto3550
  3543 print"ok!":ifin(17,1)=apthenin(17,1)=-1
- 3544 ifap=3thenprint"du traegst nun eine flasche rum!":in(16,1)=0:in(17,1)=-1
- 3550 ifa1$<>"inventur"then3570
- 3554 print"sie tragen:"
+ 3544 ifap=3thenprint"you are now carrying a bottle of rum!":in(16,1)=0:in(17,1)=-1
+ 3550 ifa1$<>"inventory"then3570
+ 3554 print"you are carrying:"
  3555 x=0:fori=1to22:ifin(i,1)=-1thenx=x+1:print"- ";mid$(it$(i),7)
- 3560 next:ifx=0thenprint"- nichts -"
+ 3560 next:ifx=0thenprint"- nothing -"
  3570 ifa2$="rum"thenoc=17
- 3571 ifa2$="rum"anda1$<>"trink"thena2$="flasche":oc=17
- 3572 ifa1$<>"druecke"then3600
- 3575 ifoc<>20thenprint"ich kann dies weder druecken noch knuddeln!":goto3600
- 3580 ifin(20,1)<>apthenprint"ich kann dies hier nicht erspaehen!":goto3600
+ 3571 ifa2$="rum"anda1$<>"drink"thena2$="bottle":oc=17
+ 3572 ifa1$<>"press"then3600
+ 3575 ifoc<>20thenprint"i can't push or hug this!":goto3600
+ 3580 ifin(20,1)<>apthenprint"i can't spot that here!":goto3600
  3590 in(20,1)=0:print"ok!":pn(16,1)=13:in(21,1)=ap
- 3600 ifa1$<>"klettere"then3630
- 3610 ifoc<>15thenprint"sorry, aber ich kann dies nicht tun!":goto3630
+ 3600 ifa1$<>"climb"then3630
+ 3610 ifoc<>15thenprint"sorry, but i can't do this!":goto3630
  3615 ifap=14then3620
- 3616 print"du bist wohl betrunken! ich sehe hier   keine baeume!"
+ 3616 print"you must be drunk! i see no trees here!"
  3617 goto3630
  3620 print"ok!":ap=12
- 3630 ifa1$<>"lege"then3680
- 3640 ifin(oc,1)<>-1thenprint"ich trage das nicht!":goto3680
- 3650 ifoc=19andap<>16thenprint"ich sehe hier keinen nagel!":goto3680
+ 3630 ifa1$<>"put"then3680
+ 3640 ifin(oc,1)<>-1thenprint"i'm not carrying that!":goto3680
+ 3650 ifoc=19andap<>16thenprint"i see no nail here!":goto3680
  3660 ifin(6,1)<>aporoc=9then3665
- 3661 print"der abenteurermampfer freut sich ueber  dein geschenk!"
+ 3661 print"the adventurer muncher is happy with    your gift!"
  3662 in(oc,1)=0:goto3680
  3665 ifin(6,1)<>apthen3670
- 3666 print"wenn du ihn fuettern willst, musst du   sie ihm schon geben!"
+ 3666 print"if you want to feed him, you have to    give them to him!"
  3667 goto3680
  3670 print"ok!":in(oc,1)=ap
- 3680 ifa1$<>"wirf"then3700
- 3685 ifin(oc,1)<>-1thenprint"ich habe dies nicht!":goto3700
- 3687 ifoc<>10thenprint"ich kann dies nicht werfen (zu schwach!)":goto3700
+ 3680 ifa1$<>"throw"then3700
+ 3685 ifin(oc,1)<>-1thenprint"i don't have this!":goto3700
+ 3687 ifoc<>10thenprint"i can't throw this (too weak!)":goto3700
  3690 print"ok!":in(10,1)=ap:ifin(5,1)<>apthen3700
- 3695 print"klirr!!!":print"du hast den kostbaren spiegel"
- 3696 print"zerdeppert! tolpatsch!"
- 3697 print:print"oh! dort ist ein geheimgang!":pn(4,1)=2:in(5,1)=0
- 3700 ifa1$<>"oeffne"then3750
- 3710 ifin(oc,1)<>apandin(oc,1)<>-1thenprint"ich sehe das nicht!":goto3750
- 3720 ifoc<>7andoc<>8thenprint"ich kann dies leider nicht oeffnen!":goto3750
- 3730 ifoc=7andsv=1thenprint"der schrank ist schon offen!":goto3750
- 3735 ifoc=7thenprint"ok!":sv=1:in(6,1)=ap:print"der mampfer begruesst sie!"
- 3736 ifoc=8thenprint"ok!":print"erdnuesse fallen heraus!":in(9,1)=ap
- 3737 ifoc=8thenprint"oh! die kiste wird vom meer weggeschwemmt!":in(8,1)=0:k=1
- 3750 ifa1$<>"grabe"then3800
- 3760 ifin(18,1)<>-1thenprint"ich habe nichts zum graben!":goto3800
- 3770 ifap<>7andap<>14andap<>8thenprint"hier kann ich nicht graben!":goto3800
- 3775 if(ap=7andsg=1)or(ap=14andgg=1)orap=8thenprint"hier ist nichts!":goto3800
- 3780 print"ok!":ifap=7thensg=1:in(8,1)=ap:print"ich finde etwas..."
- 3790 ifap=14thengg=1:in(16,1)=ap:print"ich finde etwas..."
- 3800 ifa1$<>"iss"then3850
- 3810 ifin(oc,1)<>-1thenprint"ich trage das nicht!":goto3850
- 3820 ifoc<>9thenprint"wuerg! mir ist der appetit vergangen!":goto3850
- 3830 print"mampf, mampf!":print"koestlich!":in(9,1)=0
- 3850 ifa1$<>"trink"then3900
- 3860 ifin(oc,1)<>-1thenprint"ich trage das nicht!":goto3900
- 3870 ifa2$<>"rum"thenprint"sei nicht laecherlich!":goto3900
- 3880 print"gluck, gluck!"
- 3890 print"heute blaau...hicks...und moorgen und uebermorgen widder!(oder so)"
+ 3695 print"crash!!!":print"you have smashed the valuable mirror!"
+ 3696 print"clumsy oaf!"
+ 3697 print:print"oh! there's a secret passage!":pn(4,1)=2:in(5,1)=0
+ 3700 ifa1$<>"open"then3750
+ 3710 ifin(oc,1)<>apandin(oc,1)<>-1thenprint"i can't see that!":goto3750
+ 3720 ifoc<>7andoc<>8thenprint"i'm afraid i can't open that!":goto3750
+ 3730 ifoc=7andsv=1thenprint"the closet is already open!":goto3750
+ 3735 ifoc=7thenprint"ok!":sv=1:in(6,1)=ap:print"the muncher salutes you!"
+ 3736 ifoc=8thenprint"ok!":print"peanuts fall out!":in(9,1)=ap
+ 3737 ifoc=8thenprint"oh! the chest is swept away by the sea!":in(8,1)=0:k=1
+ 3750 ifa1$<>"dig"then3800
+ 3760 ifin(18,1)<>-1thenprint"i have nothing to dig with!":goto3800
+ 3770 ifap<>7andap<>14andap<>8thenprint"i can't dig here!":goto3800
+ 3775 if(ap=7andsg=1)or(ap=14andgg=1)orap=8thenprint"there's nothing here!":goto3800
+ 3780 print"ok!":ifap=7thensg=1:in(8,1)=ap:print"i found something..."
+ 3790 ifap=14thengg=1:in(16,1)=ap:print"i found something..."
+ 3800 ifa1$<>"eat"then3850
+ 3810 ifin(oc,1)<>-1thenprint"i'm not carrying that!":goto3850
+ 3820 ifoc<>9thenprint"yuck! my appetite is gone!":goto3850
+ 3830 print"munch, munch!":print"delicious!":in(9,1)=0
+ 3850 ifa1$<>"drink"then3900
+ 3860 ifin(oc,1)<>-1thenprint"i'm not carrying that!":goto3900
+ 3870 ifa2$<>"rum"thenprint"don't be silly!":goto3900
+ 3880 print"glug, glug!"
+ 3890 print"99 bottles of beer on the waaall...":print"*hiccup* 99 bottles!(or whatever)"
  3895 in(17,1)=0:in(16,1)=-1
- 3900 ifa1$<>"gebe"thengoto3950
- 3910 ifin(oc,1)<>-1thenprint"du hast das nicht!":goto3950
- 3920 ifin(6,1)<>apandin(12,1)<>apthenprint"ich sehe hier niemanden!":goto3950
- 3925 ifap=5andoc<>9thenprint"er will dies nicht!":goto3950
- 3930 ifap=5thenprint"ok!":in(9,1)=0:in(6,1)=0:print"er verschwindet kauend!"
- 3935 ifap=11andoc<>17thenprint"er will das leider nicht!":goto3950
- 3940 ifap=11thenprint"er verschwindet betrunken!":in(17,1)=0:in(12,1)=0
+ 3900 ifa1$<>"give"thengoto3950
+ 3910 ifin(oc,1)<>-1thenprint"you don't have that!":goto3950
+ 3920 ifin(6,1)<>apandin(12,1)<>apthenprint"i see nobody here!":goto3950
+ 3925 ifap=5andoc<>9thenprint"he doesn't want that!":goto3950
+ 3930 ifap=5thenprint"ok!":in(9,1)=0:in(6,1)=0:print"he disappears chewing!"
+ 3935 ifap=11andoc<>17thenprint"i'm afraid he doesn't want that!":goto3950
+ 3940 ifap=11thenprint"he disappears drunk!":in(17,1)=0:in(12,1)=0
  3950 ifa1$<>"yoho"then3970
- 3955 ifap<>6orin(6,1)<>6thenprint"nichts passiert!":goto3970
- 3960 print"der mampfer loesst sich in luft auf!"
+ 3955 ifap<>6orin(6,1)<>6thenprint"nothing happens!":goto3970
+ 3960 print"the muncher disappears into thin air!"
  3965 in(6,1)=0:pn(6,1)=4
  3970 ifa1$<>"plugh"then4000
- 3980 ifap<>2orin(2,1)<>-1thenprint"nichts passiert!":goto4000
- 3985 print"herzlichen glueckwunsch!"
- 3990 print"du hast das adventure ueberstanden!"
- 3991 print"mit dem schatz kannst du nun etwas fuer deinen computer kaufen!"
- 3992 print:print"halte ausschau nach weiteren spielen    von thomas werner!":end
- 4000 fori=1to4000:next:ifin(19,1)=16thenin(20,1)=0
+ 3980 ifap<>2orin(2,1)<>-1thenprint"nothing happens!":goto4000
+ 3985 print"congratulations!"
+ 3990 print"you have survived the adventure!"
+ 3991 print"with this treasure you can buy somethingfun for your computer!"
+ 3992 print:print"watch for more games from thomas werner!":end
+ 4000 fori=1to1000:next:ifin(19,1)=16thenin(20,1)=0
  5000 fori=1to3500:next:pokev+21,1:goto1100
  49999 end
  50000 print"{home}{clr}{blk}    M"spc(30)"N":print"     M"spc(28)"N"
