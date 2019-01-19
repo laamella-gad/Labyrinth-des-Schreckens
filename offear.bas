@@ -5,7 +5,7 @@
     2 printchr$(147)
     3 poke198,0
     4 poke53265,peek(53265)or16
-    5 rem
+    5 forv=53248to53263:pokev,0:next
     6 poke53280,6:poke53281,6
     7 gosub 210
    10 print"{clr}{down}       labyrinth of fear"
@@ -367,7 +367,7 @@
  3991 print"with this treasure you can buy somethingfun for your computer!"
  3992 print:print"watch for more games from thomas werner!":end
  4000 fori=1to1000:next:ifin(19,1)=16thenin(20,1)=0
- 5000 fori=1to3500:next:pokev+21,1:goto1100
+ 5000 fori=1to1000:next:pokev+21,1:goto1100
  49999 end
  50000 print"{home}{clr}{blk}    M"spc(30)"N":print"     M"spc(28)"N"
  50010 print"      M"spc(26)"N"
